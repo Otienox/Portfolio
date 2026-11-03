@@ -1,79 +1,163 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Otieno | Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 70px 20px;
-      background: #1e293b;
-    }
-    h1 { color: #38bdf8; font-size: 38px; }
-    p { line-height: 1.7; color: #cbd5e1; }
-    section { padding: 35px 20px; }
-    .card {
-      background: #1e293b;
-      padding: 20px;
-      margin: 15px auto;
-      max-width: 500px;
-      border-radius: 12px;
-    }
-    a { color: #38bdf8; }
-    footer { padding: 20px; color: #94a3b8; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Otieno | Software Engineer</title>
+    <meta name="description" content="Otieno's personal software engineering portfolio">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>Hi, I'm Otieno 👋</h1>
-    <p>Software Engineering Student | Aspiring Developer</p>
-    <p>I'm learning to build websites, apps, and software
-       that solve real-world problems.</p>
-  </header>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Otieno.</div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm a Software Engineering student passionate about
-      technology, coding, and creating useful digital solutions.
-      I'm currently growing my skills through learning and projects.
-    </p>
-  </section>
+            <button class="menu-btn" aria-label="Toggle navigation">
+                ☰
+            </button>
 
-  <section>
-    <h2>My Skills</h2>
-    <div class="card">
-      HTML • CSS • Python • GitHub
-      <p>Currently learning web development and programming.</p>
-    </div>
-  </section>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section>
-    <h2>My Projects</h2>
-    <div class="card">
-      <h3>Personal Portfolio</h3>
-      <p>This is my first portfolio website, built using HTML and CSS.</p>
-    </div>
-  </section>
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h1>Hello, I'm <span>Otieno</span></h1>
 
-  <section>
-    <h2>Contact</h2>
-    <p>GitHub:
-      <a href="https://github.com/otienox">github.com/otienox</a>
-    </p>
-  </section>
+        <p>
+            A Software Engineering student passionate about
+            building websites, applications and games.
+        </p>
 
-  <footer>
-    © 2026 Otieno | Built with HTML and CSS
-  </footer>
+        <a href="#projects" class="btn">View My Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+
+        <p>
+            I am a Software Engineering student at Kisii University
+            with a passion for technology, coding and problem-solving.
+            I am learning how to develop websites, applications
+            and games while improving my programming skills.
+        </p>
+
+        <p>
+            My goal is to become a skilled software engineer
+            and create technology that solves real-world problems.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skills">
+
+            <div class="card">
+                <h3>HTML</h3>
+                <p>Building the structure of websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>CSS</h3>
+                <p>Designing attractive and responsive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>JavaScript</h3>
+                <p>Adding interactive features to websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Python</h3>
+                <p>Learning programming and problem-solving.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+
+        <div class="projects">
+
+            <div class="card">
+                <h3>Personal Portfolio</h3>
+
+                <p>
+                    A personal website showcasing my skills,
+                    projects and journey in software engineering.
+                </p>
+
+                <a href="https://github.com/Otieno/Portfolio"
+                   target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="card">
+                <h3>More Projects Coming Soon</h3>
+
+                <p>
+                    I am working on new projects to improve
+                    my coding and development skills.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            Interested in working together or sharing ideas?
+            Feel free to contact me.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:otiennogeorge88@gmail.com">
+                otiennogeorge88@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/Otienox"
+               target="_blank">
+                Visit My GitHub
+            </a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; <span id="year"></span> Otieno.
+            Built with HTML, CSS and JavaScript.
+        </p>
+    </footer>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
 
 </body>
-</html>
+  </html>
